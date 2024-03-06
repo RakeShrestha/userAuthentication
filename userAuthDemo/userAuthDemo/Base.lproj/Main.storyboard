@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="userAuthDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVi-MG-yrI">
+                                <rect key="frame" x="16" y="422" width="361" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YfN-f8-oIE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="google.png" title="   Login With Google">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedGoogleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2EF-Ad-D69"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnZ-YX-NtL">
+                                <rect key="frame" x="16" y="478" width="361" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login With Apple">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedAppleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G6H-o7-zV5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnF-ZQ-TDt">
+                                <rect key="frame" x="16" y="371" width="361" height="35"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login With Facebook">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedFbButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v2H-dx-v1E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proceed to login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-VL-vMr">
+                                <rect key="frame" x="16" y="315" width="361" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yXf-rY-GVA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MVi-MG-yrI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4oc-Ro-Vmu"/>
+                            <constraint firstItem="FnF-ZQ-TDt" firstAttribute="leading" secondItem="MVi-MG-yrI" secondAttribute="leading" id="8sU-CP-UBZ"/>
+                            <constraint firstItem="LnZ-YX-NtL" firstAttribute="trailing" secondItem="MVi-MG-yrI" secondAttribute="trailing" id="DDY-dE-k4b"/>
+                            <constraint firstItem="FnF-ZQ-TDt" firstAttribute="top" secondItem="Kbh-VL-vMr" secondAttribute="bottom" constant="16" id="Gvy-2h-rc0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MVi-MG-yrI" secondAttribute="trailing" constant="16" id="IEH-Cu-9gC"/>
+                            <constraint firstItem="LnZ-YX-NtL" firstAttribute="leading" secondItem="MVi-MG-yrI" secondAttribute="leading" id="Ow2-pM-oQT"/>
+                            <constraint firstItem="Kbh-VL-vMr" firstAttribute="leading" secondItem="FnF-ZQ-TDt" secondAttribute="leading" id="WaQ-kN-4b4"/>
+                            <constraint firstItem="LnZ-YX-NtL" firstAttribute="top" secondItem="MVi-MG-yrI" secondAttribute="bottom" constant="16" id="aKJ-01-gBK"/>
+                            <constraint firstItem="MVi-MG-yrI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="16" id="fAz-a4-hwP"/>
+                            <constraint firstItem="Kbh-VL-vMr" firstAttribute="trailing" secondItem="FnF-ZQ-TDt" secondAttribute="trailing" id="nEO-yT-Z45"/>
+                            <constraint firstItem="MVi-MG-yrI" firstAttribute="top" secondItem="FnF-ZQ-TDt" secondAttribute="bottom" constant="16" id="vsG-jm-hl3"/>
+                            <constraint firstItem="FnF-ZQ-TDt" firstAttribute="trailing" secondItem="MVi-MG-yrI" secondAttribute="trailing" id="zkq-cK-4u9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleButton" destination="LnZ-YX-NtL" id="HiO-H0-SuP"/>
+                        <outlet property="fbButton" destination="FnF-ZQ-TDt" id="XBG-tQ-Ctn"/>
+                        <outlet property="googleButton" destination="MVi-MG-yrI" id="4vS-sS-SbF"/>
+                        <outlet property="loginText" destination="Kbh-VL-vMr" id="nZ9-f1-P2C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="google.png" width="18" height="18"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
